@@ -16,8 +16,7 @@ import TransitionComponent from './components/Transition/Transition.component'
 
 export default class MainComponent extends React.Component {
   componentDidMount(){
-    setInitialLocation()
-    console.log(NativeModules.Location.search)
+    setInitialLocation(NativeModules.Location.search)
   }
   
   render() {
